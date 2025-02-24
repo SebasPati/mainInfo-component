@@ -1,0 +1,136 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .btn-primary {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  .seat-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* 🪑 Estructura de los asientos */
+  .seat-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  /* 🎨 Estilos de los asientos */
+  .seat {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #999;
+    background-color: #ccc; /* Default: Disponible */
+    transition: background-color 0.2s;
+  }
+  
+  .seat input {
+    display: none;
+  }
+  
+  /* 🟩 Asientos seleccionados */
+  .seat.selected {
+    background-color: green;
+    color: white;
+  }
+  
+  /* 🟧 Asientos ocupados */
+  .seat.occupied {
+    background-color: orange;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  /* 📌 Convenciones */
+  .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f8f8f8;
+  }
+  
+  .legend h4 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .legend-item .seat {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+  }
+  
+  /* 🔄 Responsive */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    .seat-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .seat {
+      width: 25px;
+      height: 25px;
+      font-size: 10px;
+    }
+  
+    .btn-primary {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .seat {
+      width: 20px;
+      height: 20px;
+      font-size: 8px;
+    }
+  
+    .legend {
+      font-size: 14px;
+    }
+  
+    .btn-primary {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }

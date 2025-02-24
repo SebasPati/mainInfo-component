@@ -1,0 +1,21 @@
+.header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ffcc00;
+  
+    .header-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  
+    .header-content {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+  
