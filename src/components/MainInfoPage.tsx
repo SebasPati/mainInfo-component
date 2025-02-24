@@ -125,7 +125,6 @@ export const MainInfoPage = ({ properties }: any) => {
         ))}
       </div>
     </div>
-    <Footer></Footer>
     </>
   );
 };

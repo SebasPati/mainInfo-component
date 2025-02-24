@@ -113,7 +113,6 @@ export const Reservations: React.FC = () => {
                     <p>No hay reservas para este correo.</p>
                 )}
             </div>
-            <Footer />
         </>
     );
 };

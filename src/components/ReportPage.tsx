@@ -204,7 +204,7 @@ export const ReportPage: React.FC = () => {
               </table>
           )}
       </div>
-      <Footer></Footer></>
+    </>
   );
 };
 

@@ -317,8 +317,7 @@ export const MovieScheduleSelector: React.FC = () => {
       >
         Confirmar Selección
       </button>
-    </div>
-    <Footer></Footer></>
+    </div></>
   );
 };
 
