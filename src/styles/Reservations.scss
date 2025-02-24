@@ -1,0 +1,54 @@
+.reservations-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reservations-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reservation-item {
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.header-report-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .reservation-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .reservation-button:hover {
+    background-color: white;
+    color: #007bff;
+  }

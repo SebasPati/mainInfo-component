@@ -119,9 +119,6 @@
     }
   }
   
-  /* --- Responsive --- */
-  
-  /* Para tablets (menos de 1024px) */
   @media (max-width: 1024px) {
     .charts-container {
       gap: 1rem;
@@ -136,7 +133,6 @@
     }
   }
   
-  /* Para móviles (menos de 600px) */
   @media (max-width: 600px) {
     .report-page {
       padding: 1rem;
@@ -214,3 +210,23 @@
     background-color: #0056b3;
   }
   
+  .header-report-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .reservation-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .reservation-button:hover {
+    background-color: white;
+    color: #007bff;
+  }

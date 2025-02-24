@@ -78,6 +78,9 @@ export const MainInfoPage = ({ properties }: any) => {
   <button className="btn btn-outline-light report-button" onClick={() => navigate("/report")}>
     Ver Reporte
   </button>
+  <button className="btn btn-outline-light reservation-button" onClick={() => navigate("/reservations")}>
+    Ver mis reservas
+  </button>
 </div>
     <div className="container mt-4">
       <h1 className="text-center mb-4">Películas</h1>

@@ -167,7 +167,6 @@ export const MovieScheduleSelector: React.FC = () => {
       seats: selectedSeats,
       email: email,
     };
-    console.log(reservationData);
     try {
       const response = await saveReservation(reservationData);
       if (response.error) {
@@ -207,6 +206,11 @@ export const MovieScheduleSelector: React.FC = () => {
 
   return (
     <><Header></Header><div className="container mt-4">
+      <div className="header-report-container">
+            <button className="btn btn-outline-light reservation-button" onClick={() => navigate("/")}>
+    Volver al inicio
+  </button>
+  </div>
       <h2 className="text-center">Selecciona una Sala, Horario y Asientos</h2>
       <div className="movie-container">
         {selectedMovie ? (
@@ -222,12 +226,6 @@ export const MovieScheduleSelector: React.FC = () => {
           <p>No se encontró información de la película.</p>
         )}
       </div>
-      <button
-        className="btn btn-secondary mt-3 w-100"
-        onClick={() => navigate("/")}
-      >
-        Volver a la selección de películas
-      </button>
       <div className="form-group mt-3">
         <label>Correo electrónico:</label>
         <input

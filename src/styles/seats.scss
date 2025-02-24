@@ -19,8 +19,7 @@
     margin-top: 20px;
     flex-wrap: wrap;
   }
-  
-  /* 🪑 Estructura de los asientos */
+
   .seat-grid {
     display: flex;
     flex-direction: column;
@@ -33,7 +32,6 @@
     gap: 8px;
   }
   
-  /* 🎨 Estilos de los asientos */
   .seat {
     width: 30px;
     height: 30px;
@@ -46,7 +44,7 @@
     font-weight: bold;
     text-align: center;
     border: 1px solid #999;
-    background-color: #ccc; /* Default: Disponible */
+    background-color: #ccc; 
     transition: background-color 0.2s;
   }
   
@@ -54,20 +52,17 @@
     display: none;
   }
   
-  /* 🟩 Asientos seleccionados */
   .seat.selected {
     background-color: green;
     color: white;
   }
   
-  /* 🟧 Asientos ocupados */
   .seat.occupied {
     background-color: orange;
     color: white;
     cursor: not-allowed;
   }
   
-  /* 📌 Convenciones */
   .legend {
     display: flex;
     flex-direction: column;
@@ -95,7 +90,6 @@
     border-radius: 3px;
   }
   
-  /* 🔄 Responsive */
   @media (max-width: 768px) {
     .container {
       max-width: 100%;
@@ -133,4 +127,25 @@
       font-size: 14px;
       padding: 8px 16px;
     }
+  }
+
+  .header-report-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .reservation-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .reservation-button:hover {
+    background-color: white;
+    color: #007bff;
   }

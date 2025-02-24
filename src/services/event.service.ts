@@ -99,3 +99,24 @@ export const saveReservation = async (reservationData: {
     return { error: 'No se pudo guardar la reserva' };
   }
 };
+
+export const deleteReservation = async (id: string, movieName: string, email: string) => {
+  try {
+    const response = await fetch(`http://localhost:3000/reservations/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ movieName, email }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status} - ${response.statusText}`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Error deleting reservation:', error);
+    return { error: 'No se pudo eliminar la reserva' };
+  }
+};

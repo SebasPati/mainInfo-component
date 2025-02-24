@@ -109,6 +109,11 @@ export const ReportPage: React.FC = () => {
 
   return (
     <><Header></Header><div className="report-page">
+        <div className="header-report-container">
+            <button className="btn btn-outline-light reservation-button" onClick={() => navigate("/")}>
+    Volver al inicio
+  </button>
+  </div>
           <h1 className="title">Reporte de Reservas</h1>
 
           <div className="charts-container">
@@ -198,9 +203,6 @@ export const ReportPage: React.FC = () => {
                   </tbody>
               </table>
           )}
-          <button className="back-button" onClick={() => navigate("/")}>
-              Volver a la página principal
-          </button>
       </div>
       <Footer></Footer></>
   );
